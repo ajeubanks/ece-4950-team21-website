@@ -11,13 +11,13 @@ import ThemeProvider from './context/ThemeContext'; // Import the theme context
 const Main: React.FC = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
           <Header />
           <Routes>
-            <Route path={`${import.meta.env.BASE_URL}`} element={<Home />} />
-            <Route path={`${import.meta.env.BASE_URL}about`} element={<About />} />
-            <Route path={`${import.meta.env.BASE_URL}projects`} element={<Projects />} />
+            <Route path={`/`} element={<Home />} />
+            <Route path={`/about`} element={<About />} />
+            <Route path={`/projects`} element={<Projects />} />
           </Routes>
         </div>
       </Router>
