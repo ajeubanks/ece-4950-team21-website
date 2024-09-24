@@ -26,7 +26,8 @@ const About: React.FC = () => {
           name="Eric Mitchell"
           major="Computer Engineering"
           email='aeubanks322@gmail.com'
-          phone="(864) 612-0878"
+          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
+          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
         />
         
         {/* Profile 3 */}
@@ -35,7 +36,8 @@ const About: React.FC = () => {
           name="Steven Johnson"
           major="Electrical Engineering"
           email='aeubanks322@gmail.com'
-          phone="(864) 612-0878"
+          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
+          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
         />
 
         {/* Profile 4 */}
@@ -44,7 +46,8 @@ const About: React.FC = () => {
           name="Alvi Topuzi"
           major="Electrical Engineering"
           email='aeubanks322@gmail.com'
-          phone="(864) 612-0878"
+          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
+          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
         />
         
         {/* Profile 5 */}
@@ -53,7 +56,8 @@ const About: React.FC = () => {
           name="Andrew Berkeland"
           major="Electrical Engineering"
           email='aeubanks322@gmail.com'
-          phone="(864) 612-0878"
+          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
+          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
         />
       </div>
     </div>

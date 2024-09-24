@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaFilePdf, FaGoogle } from "react-icons/fa"; // Import icons
+import { FaLinkedin } from "react-icons/fa"; // Import icons
 import { SiGmail } from "react-icons/si";
 import { ImProfile } from "react-icons/im";
 
