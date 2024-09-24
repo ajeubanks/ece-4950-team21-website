@@ -43,6 +43,7 @@ const Header: React.FC = () => {
       <nav className="flex-1 flex justify-center space-x-12">
         <NavLink
           to={`/`}
+          end
           className={({ isActive }) =>
             `text-lg transition-colors duration-300 hover:text-orange hover:dark:text-orange ${
               isActive ? "font-bold text-orange" : ""
