@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         {darkMode ? (
           <img src="/img/ece_logo_dark2.png" alt="Logo" className="h-20" />
         ) : (
-          <img src={`${import.meta.env.BASE_URL}img/ece_logo.png`} alt="Logo" className="h-20" />
+          <img src="ece-4950-team21-website/img/ece_logo.png" alt="Logo" className="h-20" />
         )}
       </div>
 
