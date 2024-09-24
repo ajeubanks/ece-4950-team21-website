@@ -17,7 +17,7 @@ const About: React.FC = () => {
           major="Computer Engineering"
           email='aeubanks322@gmail.com'
           linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
-          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
+          resumeLink={`${import.meta.env.BASE_URL}resumes/Andrew Eubanks Resume.docx (1).pdf`}
         />
         
         {/* Profile 2 */}
