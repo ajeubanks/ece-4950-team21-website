@@ -15,9 +15,9 @@ const Main: React.FC = () => {
         <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
           <Header />
           <Routes>
-            <Route path={`${import.meta.env.BASE_URL}/`} element={<Home />} />
-            <Route path={`${import.meta.env.BASE_URL}/about`} element={<About />} />
-            <Route path={`${import.meta.env.BASE_URL}/projects`} element={<Projects />} />
+            <Route path={`${import.meta.env.BASE_URL}`} element={<Home />} />
+            <Route path={`${import.meta.env.BASE_URL}about`} element={<About />} />
+            <Route path={`${import.meta.env.BASE_URL}projects`} element={<Projects />} />
           </Routes>
         </div>
       </Router>

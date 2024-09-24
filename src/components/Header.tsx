@@ -42,7 +42,7 @@ const Header: React.FC = () => {
       {/* Middle section: Navigation links, centered */}
       <nav className="flex-1 flex justify-center space-x-12">
         <NavLink
-          to={`${import.meta.env.BASE_URL}/`}
+          to={`${import.meta.env.BASE_URL}`}
           className={({ isActive }) =>
             `text-lg transition-colors duration-300 hover:text-orange hover:dark:text-orange ${
               isActive ? "font-bold text-orange" : ""
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           Home
         </NavLink>
         <NavLink
-          to={`${import.meta.env.BASE_URL}/about`}
+          to={`${import.meta.env.BASE_URL}about`}
           className={({ isActive }) =>
             `text-lg transition-colors duration-300 hover:text-orange hover:dark:text-orange ${
               isActive ? "font-bold text-orange" : ""
@@ -69,7 +69,7 @@ const Header: React.FC = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <NavLink
-            to={`${import.meta.env.BASE_URL}/projects`}
+            to={`${import.meta.env.BASE_URL}projects`}
             className={({ isActive }) =>
               `flex items-center text-lg transition-colors duration-300 hover:text-orange hover:dark:text-orange ${
                 isActive ? "font-bold text-orange" : ""
