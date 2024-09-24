@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       {/* Left section: Logo */}
       <div className="flex-1 flex justify-start">
         {darkMode ? (
-          <img src="/img/ece_logo_dark2.png" alt="Logo" className="h-20" />
+          <img src={`${import.meta.env.BASE_URL}img/ece_logo_dark2.png`} alt="Logo" className="h-20" />
         ) : (
           <img src={`${import.meta.env.BASE_URL}img/ece_logo.png`} alt="Logo" className="h-20" />
         )}
