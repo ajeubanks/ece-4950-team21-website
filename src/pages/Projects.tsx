@@ -13,9 +13,9 @@ const Projects: React.FC = () => {
         reportLink="/path/to/project1-report.pdf"
         docsLink="/path/to/project1-documents"
         images={[
-          '/path/to/project1-image1.jpg',
-          '/path/to/project1-image2.jpg',
-          '/path/to/project1-image3.jpg',
+          `${import.meta.env.BASE_URL}img/ajeubanks.jpg`,
+          `${import.meta.env.BASE_URL}img/ajeubanks.jpg`,
+          `${import.meta.env.BASE_URL}img/ajeubanks.jpg`,
         ]}
       />
 
