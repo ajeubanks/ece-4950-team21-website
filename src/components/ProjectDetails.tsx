@@ -24,7 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
           href={descriptionLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded flex items-center"
+          className="bg-purple hover:bg-purple text-white py-2 px-4 rounded flex items-center"
         >
           <FaFileAlt className="mr-2" /> Project Description
         </a>
@@ -32,7 +32,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
           href={reportLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded flex items-center"
+          className="bg-orange hover:bg-orange text-white py-2 px-4 rounded flex items-center"
         >
           <FaFilePdf className="mr-2" /> Project Report
         </a>
