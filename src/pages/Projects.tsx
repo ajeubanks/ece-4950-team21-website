@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectDetails from '../components/ProjectDetails'; // Import the new component
+import ProjectDetails from './components/ProjectDetails';
 
 const Projects: React.FC = () => {
   return (
@@ -12,6 +12,11 @@ const Projects: React.FC = () => {
         descriptionLink="/path/to/project1-description.pdf"
         reportLink="/path/to/project1-report.pdf"
         docsLink="/path/to/project1-documents"
+        images={[
+          '/path/to/project1-image1.jpg',
+          '/path/to/project1-image2.jpg',
+          '/path/to/project1-image3.jpg',
+        ]}
       />
 
       {/* Project 2 Section */}
@@ -20,6 +25,11 @@ const Projects: React.FC = () => {
         descriptionLink="/path/to/project2-description.pdf"
         reportLink="/path/to/project2-report.pdf"
         docsLink="/path/to/project2-documents"
+        images={[
+          '/path/to/project2-image1.jpg',
+          '/path/to/project2-image2.jpg',
+          '/path/to/project2-image3.jpg',
+        ]}
       />
 
       {/* Project 3 Section */}
@@ -28,6 +38,11 @@ const Projects: React.FC = () => {
         descriptionLink="/path/to/project3-description.pdf"
         reportLink="/path/to/project3-report.pdf"
         docsLink="/path/to/project3-documents"
+        images={[
+          '/path/to/project3-image1.jpg',
+          '/path/to/project3-image2.jpg',
+          '/path/to/project3-image3.jpg',
+        ]}
       />
 
       {/* Final Project Section */}
@@ -36,6 +51,11 @@ const Projects: React.FC = () => {
         descriptionLink="/path/to/final-description.pdf"
         reportLink="/path/to/final-report.pdf"
         docsLink="/path/to/final-documents"
+        images={[
+          '/path/to/final-image1.jpg',
+          '/path/to/final-image2.jpg',
+          '/path/to/final-image3.jpg',
+        ]}
       />
     </div>
   );
