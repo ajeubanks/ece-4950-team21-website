@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectDetails from '../components/ProjectDetails'; // Import the new component
 
 const Projects: React.FC = () => {
   return (
@@ -6,215 +7,36 @@ const Projects: React.FC = () => {
       <h1 className="text-4xl font-bold mb-8">Projects</h1>
 
       {/* Project 1 Section */}
-      <section id="project1" className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4">Project 1</h2>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-      </section>
+      <ProjectDetails
+        projectTitle="Project 1"
+        descriptionLink="/path/to/project1-description.pdf"
+        reportLink="/path/to/project1-report.pdf"
+        docsLink="/path/to/project1-documents"
+      />
 
       {/* Project 2 Section */}
-      <section id="project2" className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4">Project 2</h2>
-        <p>Details about Project 2...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-      </section>
+      <ProjectDetails
+        projectTitle="Project 2"
+        descriptionLink="/path/to/project2-description.pdf"
+        reportLink="/path/to/project2-report.pdf"
+        docsLink="/path/to/project2-documents"
+      />
 
       {/* Project 3 Section */}
-      <section id="project3" className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4">Project 3</h2>
-        <p>Details about Project 3...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-      </section>
+      <ProjectDetails
+        projectTitle="Project 3"
+        descriptionLink="/path/to/project3-description.pdf"
+        reportLink="/path/to/project3-report.pdf"
+        docsLink="/path/to/project3-documents"
+      />
 
       {/* Final Project Section */}
-      <section id="final" className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4">Final Project</h2>
-        <p>Details about the Final Project...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-        <p>Details about Project 1...</p>
-
-        <p>Details about Project 1...</p>
-      </section>
+      <ProjectDetails
+        projectTitle="Final Project"
+        descriptionLink="/path/to/final-description.pdf"
+        reportLink="/path/to/final-report.pdf"
+        docsLink="/path/to/final-documents"
+      />
     </div>
   );
 };
