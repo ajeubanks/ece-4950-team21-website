@@ -41,7 +41,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
       {/* Slideshow */}
       {images.length > 0 && (
         <>
-          <div className="relative mb-4 w-full lg:w-1/2 h-64 md:h-96 bg-white overflow-hidden rounded-md shadow-lg border border-gray-300 dark:border-gray-600">
+          <div className="relative mb-4 w-full xl:w-1/2 lg:w-2/3 h-64 md:h-96 bg-white overflow-hidden rounded-md shadow-lg border border-gray-300 dark:border-gray-600">
             <div className="relative w-full h-full">
               {/* Wrap each image in a div */}
               {images.map((image, index) => (
@@ -77,7 +77,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
           </div>
 
           {/* Progress Indicator centered below the image */}
-          <div className="w-full lg:w-1/2 flex justify-center space-x-2 mt-4 mb-4">
+          <div className="w-full xl:w-1/2 lg:w-2/3 flex justify-center space-x-2 mt-4 mb-4">
             {images.map((_, index) => (
               <span
                 key={index}
@@ -91,7 +91,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
       )}
 
       {/* Buttons for Project Links */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:w-1/2">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-1/2 lg:w-2/3">
         <a
           href={descriptionLink}
           target="_blank"
