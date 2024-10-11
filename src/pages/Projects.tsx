@@ -25,10 +25,12 @@ const Projects: React.FC = () => {
       <section id="project2" className="mb-12">
         <ProjectDetails
           projectTitle="Project 2"
-          descriptionLink={`${import.meta.env.BASE_URL}project1/ECE 4950 Project 1 Fall 2024.pdf`}
-          reportLink="/path/to/project2-report.pdf"
-          docsLink="/path/to/project2-documents"
-          images={[]}
+          descriptionLink={`${import.meta.env.BASE_URL}project2/ECE 4950 Project 2 Fall 2024.pdf`}
+          reportLink={`${import.meta.env.BASE_URL}project2/Project 2 Report.pdf`}
+          docsLink="https://github.com/sjohn1147/ECE-4950/tree/main/Project2"
+          images={[
+            `${import.meta.env.BASE_URL}img/project2_demo.png`,
+          ]}
         />
       </section>
 

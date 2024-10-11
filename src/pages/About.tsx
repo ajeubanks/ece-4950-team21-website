@@ -12,7 +12,8 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 justify-items-center pt-16">
         {/* Profile 1 */}
         <ProfileCard
-          imgSrc={`${import.meta.env.BASE_URL}img/ajeubanks.jpg`}
+          // imgSrc={`${import.meta.env.BASE_URL}img/ajeubanks.jpg`}
+          imgSrc="/path-to-another-profile-pic.jpg"
           name="Andrew Eubanks"
           major="Computer Engineering"
           email='aeubanks322@gmail.com'

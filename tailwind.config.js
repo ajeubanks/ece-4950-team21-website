@@ -10,7 +10,9 @@ module.exports = {
         'darker': '#191b19',
         'dark': '#111113',
         'orange': '#f56600',
-        'purple': '#4f2b7b'
+        'orange-darker': '#d15802',
+        'purple': '#4f2b7b',
+        'purple-darker': '#341559',
       }
     },
   },
