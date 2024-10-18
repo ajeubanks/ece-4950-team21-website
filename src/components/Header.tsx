@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Hamburger and close icons
 import DarkModeSwitcher from './DarkModeSwitcher';
@@ -7,23 +7,44 @@ import { ThemeContext } from '../context/ThemeContext';
 const Header: React.FC = () => {
   const { darkMode } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false); // State to toggle mobile menu
+  const [isMobile, setIsMobile] = useState(false); // State to track if on mobile
+
+  // Check if it's a mobile screen
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // If screen is less than 768px, consider it mobile
+    };
+
+    handleResize(); // Check screen size on initial load
+    window.addEventListener('resize', handleResize); // Add listener to detect screen size changes
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 flex justify-between items-center pl-4 pr-4 bg-zinc-100 dark:bg-dark shadow-lg">
       {/* Left section: Logo */}
-      <div className="flex-1 flex justify-start">
-        {darkMode ? (
-          <img
-            src={`${import.meta.env.BASE_URL}img/ece_logo_dark2.png`}
-            alt="Logo"
-            className="h-20"
-          />
-        ) : (
-          <img
-            src={`${import.meta.env.BASE_URL}img/ece_logo.png`}
-            alt="Logo"
-            className="h-20"
-          />
+      <div className="flex-1 flex justify-start items-center">
+        {/* Conditional rendering for dark mode and mobile/desktop logos */}
+        <img
+          src={
+            darkMode
+              ? isMobile
+                ? `${import.meta.env.BASE_URL}img/logo.png` // Dark mode mobile logo
+                : `${import.meta.env.BASE_URL}img/ece_logo_dark2.png` // Dark mode desktop logo
+              : isMobile
+              ? `${import.meta.env.BASE_URL}img/logo.png` // Light mode mobile logo
+              : `${import.meta.env.BASE_URL}img/ece_logo.png` // Light mode desktop logo
+          }
+          alt="Logo"
+          className="h-20" // Adjust the height for both mobile and desktop
+        />
+
+        {/* Center Team 21 only on mobile */}
+        {isMobile && (
+          <span className="text-zinc-800 dark:text-zinc-100 text-3xl pr-10 font-bold text-center flex-1">
+            Team 21
+          </span>
         )}
       </div>
 
@@ -72,12 +93,15 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Right section: Team 21 and DarkModeSwitcher */}
+      {/* Right section: DarkModeSwitcher and Team 21 - Visible only on desktop */}
       <div className="hidden md:flex flex-1 justify-end items-center">
         <DarkModeSwitcher />
-        <span className="text-zinc-800 dark:text-zinc-100 mr-4 text-3xl font-bold ml-8">
-          Team 21
-        </span>
+        {/* Team 21 text here, only on desktop */}
+        {!isMobile && (
+          <span className="text-zinc-800 dark:text-zinc-100 mr-4 text-3xl font-bold ml-8">
+            Team 21
+          </span>
+        )}
       </div>
 
       {/* Mobile Sliding Menu */}
@@ -132,7 +156,7 @@ const Header: React.FC = () => {
               Projects
             </NavLink>
 
-            {/* DarkMode Switcher, aligned with menu */}
+            {/* DarkMode Switcher aligned with menu */}
             <div className="mt-6 flex items-start">
               <DarkModeSwitcher />
             </div>
