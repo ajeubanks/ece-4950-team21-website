@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa'; // Hamburger and close icons
+import { NavLink } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Hamburger and close icons
 import DarkModeSwitcher from './DarkModeSwitcher';
 import { ThemeContext } from '../context/ThemeContext';
 
