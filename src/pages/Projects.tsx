@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
             projectTitle="Project 1"
             descriptionLink={`${import.meta.env.BASE_URL}project1/ECE 4950 Project 1 Fall 2024.pdf`}
             reportLink={`${import.meta.env.BASE_URL}project1/Project 1 Report.pdf`}
-            docsLink="https://github.com/sjohn1147/ECE-4950/tree/main/lab1"
+            docsLink="https://github.com/sjohn1147/ECE-4950/tree/main/Project1"
             images={[
               `${import.meta.env.BASE_URL}img/project1_part1.png`,
               `${import.meta.env.BASE_URL}img/project1_part2.png`,
@@ -55,8 +55,15 @@ const Projects: React.FC = () => {
             projectTitle="Final Project"
             descriptionLink={`${import.meta.env.BASE_URL}project4/ECE 4950 Project 4 Fall 2024.pdf`}
             reportLink={`${import.meta.env.BASE_URL}project4/Project 4 Report - Team 21.pdf`}
-            docsLink="/path/to/final-documents"
-            images={[]}
+            docsLink={`${import.meta.env.BASE_URL}project4/Final Project Customer Requirements.pdf`}
+            images={[
+              `${import.meta.env.BASE_URL}img/IMG_6873.jpg`,
+              `${import.meta.env.BASE_URL}img/IMG_6872.jpg`,
+              `${import.meta.env.BASE_URL}img/game_menu.png`,
+              `${import.meta.env.BASE_URL}img/game_ui.png`,
+              `${import.meta.env.BASE_URL}img/simulink.png`,
+              `${import.meta.env.BASE_URL}img/image_recognition.png`
+            ]}
           />
         </section>
       </div>

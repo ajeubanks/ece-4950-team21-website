@@ -12,8 +12,7 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 justify-items-center pt-16">
         {/* Profile 1 */}
         <ProfileCard
-          // imgSrc={`${import.meta.env.BASE_URL}img/ajeubanks.jpg`}
-          imgSrc="/path-to-another-profile-pic.jpg"
+          imgSrc={`${import.meta.env.BASE_URL}img/IMG_6450.jpg`}
           name="Andrew Eubanks"
           major="Computer Engineering"
           email='aeubanks322@gmail.com'
@@ -23,42 +22,42 @@ const About: React.FC = () => {
         
         {/* Profile 2 */}
         <ProfileCard
-          imgSrc="/path-to-another-profile-pic.jpg"
+          imgSrc={`${import.meta.env.BASE_URL}img/Eric_Profile_Picture.JPG`}
           name="Eric Mitchell"
           major="Computer Engineering"
-          email='aeubanks322@gmail.com'
-          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
-          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
+          email='elmitch@g.clemson.edu'
+          linkedin='https://www.linkedin.com/in/eric-mitchell-771b2714a/'
+          resumeLink={`${import.meta.env.BASE_URL}resumes/Eric Mitchell Resume.pdf`}
         />
         
         {/* Profile 3 */}
         <ProfileCard
-          imgSrc="/path-to-third-profile-pic.jpg"
+          imgSrc={`${import.meta.env.BASE_URL}img/placeholder.jpg`}
           name="Steven Johnson"
           major="Electrical Engineering"
-          email='aeubanks322@gmail.com'
-          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
-          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
+          email='sjohn27@g.clemson.edu'
+          linkedin='https://www.linkedin.com/in/steven-a-johnson-1147c/'
+          resumeLink={`${import.meta.env.BASE_URL}resumes/Andrew Eubanks Resume.docx (1).pdf`}
         />
 
         {/* Profile 4 */}
         <ProfileCard
-          imgSrc="/path-to-fourth-profile-pic.jpg"
+          imgSrc={`${import.meta.env.BASE_URL}img/alvi.jpg`}
           name="Alvi Topuzi"
           major="Electrical Engineering"
-          email='aeubanks322@gmail.com'
-          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
-          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
+          email='atopuzi@g.clemson.edu'
+          linkedin='https://www.linkedin.com/in/alvi-topuzi/'
+          resumeLink={`${import.meta.env.BASE_URL}resumes/Alvi_Topuzi.pdf`}
         />
         
         {/* Profile 5 */}
         <ProfileCard
-          imgSrc="/path-to-fifth-profile-pic.jpg"
+          imgSrc={`${import.meta.env.BASE_URL}img/IMG_6877.JPG`}
           name="Andrew Berkeland"
           major="Electrical Engineering"
-          email='aeubanks322@gmail.com'
-          linkedin='https://www.linkedin.com/in/andrew-eubanks-9a5687322/'
-          resumeLink='/resumes/Andrew Eubanks Resume.docx (1).pdf'
+          email='aberkel@g.clemson.edu'
+          linkedin='https://www.linkedin.com/in/placeholder/'
+          resumeLink={`${import.meta.env.BASE_URL}resumes/Andrew Eubanks Resume.docx (1).pdf`}
         />
       </div>
     </div>

@@ -140,7 +140,7 @@ const Header: React.FC = () => {
                   Project 3
                 </button>
                 <button
-                  onClick={() => handleProjectClick("final")}
+                  onClick={() => handleProjectClick("finalProject")}
                   className="block py-3 text-left text-zinc-800 dark:text-zinc-100 transition-colors duration-300 hover:text-orange dark:hover:text-orange"
                 >
                   Final Project

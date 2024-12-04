@@ -16,7 +16,7 @@ const Model: React.FC<{ modelPath: string }> = ({ modelPath }) => {
 
 const ModelViewer: React.FC = () => {
   return (
-    <div className="w-full h-96 mx-auto border border-gray-300 dark:border-gray-600 rounded-md shadow-lg bg-zinc-100 dark:bg-zinc-800">
+    <div className="w-full h-96 mx-auto border border-gray-300 dark:border-gray-600 rounded-md shadow-lg bg-zinc-100 dark:bg-dark">
       <Canvas>
         <ambientLight intensity={0.8} />
         <directionalLight position={[10, 10, 5]} intensity={1} />

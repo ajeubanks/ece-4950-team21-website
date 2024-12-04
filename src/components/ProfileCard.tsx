@@ -58,17 +58,19 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       {/* Social Media Icons and Resume */}
       <div className="flex justify-center mt-4 space-x-4">
         {/* LinkedIn */}
-        <a
-          href={linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-transform duration-300"
-        >
-          <FaLinkedin
-            className="text-gray-600 hover:text-blue-500 hover:scale-110 transition-all duration-300 cursor-pointer"
-            size={24}
-          />
-        </a>
+        {linkedin && !linkedin.includes("placeholder") && (
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform duration-300"
+          >
+            <FaLinkedin
+              className="text-gray-600 hover:text-blue-500 hover:scale-110 transition-all duration-300 cursor-pointer"
+              size={24}
+            />
+          </a>
+        )}
 
         {/* Gmail Link */}
         <a

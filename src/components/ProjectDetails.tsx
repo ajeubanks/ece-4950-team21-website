@@ -100,7 +100,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
       )}
 
       {/* Buttons for Project Links */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-3/4 lg:w-3/4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-3/4 lg:w-3/4 sm:w-full">
         <a
           href={descriptionLink}
           target="_blank"
@@ -125,8 +125,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
           rel="noopener noreferrer"
           className="relative bg-purple dark:bg-dark text-zinc-100 dark:text-zinc-100 py-4 px-6 rounded-md text-center text-lg flex justify-center items-center overflow-hidden transition-all duration-300 group shadow-lg border border-gray-800 dark:border-white dark:border-opacity-40 hover:bg-purple-darker hover:dark:bg-zinc-900 dark:hover:border-white"
         >
-          <FaLink className="mr-2 z-10" />
-          <span className="z-10">Supporting Docs</span>
+          {docsLink.includes("Customer") ? (
+            <FaFileAlt className="mr-2 z-10" />
+          ) : (
+            <FaLink className="mr-2 z-10" />
+          )}
+          <span className="z-10">
+            {docsLink.includes("Customer") ? "Customer Reqs." : "Supporting Docs"}
+          </span>
         </a>
       </div>
     </section>
