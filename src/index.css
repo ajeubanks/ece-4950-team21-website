@@ -9,3 +9,7 @@ body {
 body.dark {
   @apply bg-zinc-900 text-gray-100;
 }
+
+.video {
+  height: 34rem;
+}

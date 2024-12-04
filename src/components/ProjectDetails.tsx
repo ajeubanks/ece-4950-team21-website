@@ -16,7 +16,6 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
   docsLink,
   images,
 }) => {
-  // Each ProjectDetails instance should have its own state
   const [currentImage, setCurrentImage] = useState(0);
 
   // Switch to the next image
@@ -38,13 +37,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
   }, [currentImage, images.length]);
 
   return (
-    <section className="mb-12">
-      <h2 className="text-4xl font-semibold mb-6">{projectTitle}</h2>
+    <section className="mb-12 flex flex-col items-center">
+      {/* Centered project title */}
+      <h2 className="text-4xl font-semibold mb-6 text-center">{projectTitle}</h2>
 
       {/* Render slideshow only if images exist */}
       {images.length > 0 ? (
         <>
-          <div className="relative mb-4 w-full xl:w-1/2 lg:w-5/6 h-64 md:h-96 bg-white overflow-hidden rounded-md shadow-lg border border-gray-300 dark:border-gray-600">
+          <div className="relative mb-4 w-full xl:w-3/4 lg:w-3/4 h-64 md:h-96 bg-white overflow-hidden rounded-md shadow-lg border border-gray-300 dark:border-gray-600">
             <div className="relative w-full h-full">
               {images.map((image, index) => (
                 <div
@@ -62,29 +62,28 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
               ))}
 
               {/* Previous and Next Controls */}
-              {images.length > 1 && 
-              <>
-                <button
-                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-dark text-white p-3 rounded-full hover:text-orange dark:hover:text-orange transition-all duration-500"
-                  onClick={prevImage}
-                >
-                  <FaArrowLeft />
-                </button>
-                <button
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark text-white p-3 rounded-full hover:text-orange dark:hover:text-orange transition-all duration-500"
-                  onClick={nextImage}
-                >
-                  <FaArrowRight />
-                </button>
-              </>
-              }
+              {images.length > 1 && (
+                <>
+                  <button
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-dark text-white p-3 rounded-full hover:text-orange dark:hover:text-orange transition-all duration-500"
+                    onClick={prevImage}
+                  >
+                    <FaArrowLeft />
+                  </button>
+                  <button
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark text-white p-3 rounded-full hover:text-orange dark:hover:text-orange transition-all duration-500"
+                    onClick={nextImage}
+                  >
+                    <FaArrowRight />
+                  </button>
+                </>
+              )}
             </div>
           </div>
 
           {/* Progress Indicator centered below the image */}
-          {images.length > 1 &&
-          <>
-            <div className="w-full xl:w-1/2 lg:w-5/6 flex justify-center space-x-2 mt-4 mb-4">
+          {images.length > 1 && (
+            <div className="w-full xl:w-3/4 lg:w-3/4 flex justify-center space-x-2 mt-4 mb-4">
               {images.map((_, index) => (
                 <span
                   key={index}
@@ -94,15 +93,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 ></span>
               ))}
             </div>
-          </>
-          }
+          )}
         </>
       ) : (
         <span />
       )}
 
       {/* Buttons for Project Links */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-1/2 lg:w-5/6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:w-3/4 lg:w-3/4">
         <a
           href={descriptionLink}
           target="_blank"
