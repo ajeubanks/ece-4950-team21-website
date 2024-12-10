@@ -57,7 +57,7 @@ const About: React.FC = () => {
           major="Electrical Engineering"
           email='aberkel@g.clemson.edu'
           linkedin='https://www.linkedin.com/in/placeholder/'
-          resumeLink={`${import.meta.env.BASE_URL}resumes/Andrew Eubanks Resume.docx (1).pdf`}
+          resumeLink={`${import.meta.env.BASE_URL}resumes/BerkelandAndrew_Resume (3).pdf`}
         />
       </div>
     </div>

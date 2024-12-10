@@ -54,8 +54,8 @@ const Projects: React.FC = () => {
           <ProjectDetails
             projectTitle="Final Project"
             descriptionLink={`${import.meta.env.BASE_URL}project4/ECE 4950 Project 4 Fall 2024.pdf`}
-            reportLink={`${import.meta.env.BASE_URL}project4/Project 4 Report - Team 21.pdf`}
-            docsLink={`${import.meta.env.BASE_URL}project4/Final Project Customer Requirements.pdf`}
+            reportLink={`${import.meta.env.BASE_URL}project4/Team 21 - ECE 4950 Project 4 Fall 2024.pdf`}
+            docsLink="https://github.com/sjohn1147/ECE-4950/tree/main/Project4"
             images={[
               `${import.meta.env.BASE_URL}img/IMG_6873.jpg`,
               `${import.meta.env.BASE_URL}img/IMG_6872.jpg`,
